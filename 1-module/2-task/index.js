@@ -11,9 +11,11 @@ function print(text) {
  * @param {string | null} name
  * @returns {boolean}
  */
-function isValid(name) {
-  // ваш код...
-}
+
+  function isValid(name) {
+    return !((+name=== 0)||(name.length< 4)||(name.indexOf(" ") !==(-1))) ;
+    
+   }
 
 function sayHello() {
   let userName = prompt('Введите ваше имя');
